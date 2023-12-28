@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.game-title{
+  font-size: 25px;  
+}
+
+.js-result,
+.js-moves,
+.js-score{
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
+.game-move-button{
+  background-color: transparent;
+  border: 3px solid white;
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.game-move-image{
+  height: 80px;
+  width: 80px;
+}
+
+.reset-button{
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 30px
+}

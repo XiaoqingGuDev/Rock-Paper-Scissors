@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock Paper Scossors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+</head>
+
+<body>
+  <p class="game-title">
+    Rock Paper Sessors
+  <p>
+    <button class="game-move-button" id="play-game-rock" onclick="
+    playGame('rock')">
+      <img class="game-move-image" src="images/rock-emoji.png" alt="">
+    </button>
+
+    <button class="game-move-button" onclick="
+    playGame('paper')">
+      <img class="game-move-image" src="images/paper-emoji.png" alt="">
+    </button>
+
+    <button class="game-move-button" onclick="
+    playGame('scissors')">
+      <img class="game-move-image" src="images/scissors-emoji.png" alt="">
+    </button>
+
+  <p>
+  <div class="result js-result">
+  </div>
+  </p>
+
+  <p>
+  <div class="moves js-moves">
+  </div>
+  </p>
+
+  <p>
+  <div class="score js-score">
+  </div>
+
+  </p>
+  <p>
+    <buttonc class="reset-button" onclick="
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+
+    updateScoreElement();
+
+    console.log(score);
+    ">
+      Reset score
+      </button>
+  </p>
+
+  <script src="scripts/rock-paper-scissors.js"></script>
+
+</body>
+
+</html>
