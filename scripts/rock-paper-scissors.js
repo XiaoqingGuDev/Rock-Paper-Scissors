@@ -49,9 +49,11 @@ function playGame(playMove)
 
   localStorage.setItem('score', JSON.stringify(score));
 
+  let playMoveImg = `<img class="game-move-image" src="images/${playMove}-emoji.png">`
+  let computerMoveImg = `<img class="game-move-image" src="images/${computerMove}-emoji.png">`
 
   document.querySelector(".js-result").innerHTML = result;
-  document.querySelector(".js-moves").innerHTML = `You ${playMove} - ${computerMove} Computer`;
+  document.querySelector(".js-moves").innerHTML = `You ${playMoveImg} : ${computerMoveImg} Computer`;
 
   updateScoreElement();
   // alert(`you pick ${playMove}. Computer pick ${computerMove}. ${result}`);
